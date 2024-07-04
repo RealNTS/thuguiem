@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message for You</title>
+    <title>Thông Điệp Dành Cho Bạn</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #ffe6e6; /* Light pink background */
             color: #800000; /* Dark red text */
             text-align: center;
-            padding: 50px;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            color: #ff0000; /* Red color for heading */
+            font-size: 1.5em;
+            margin-bottom: 20px;
         }
         .section {
-            padding: 20px;
+            padding: 15px;
             margin: 10px 0;
             border-radius: 10px;
+            font-size: 1em;
         }
         .section:nth-child(odd) {
             background-color: #ffcccc; /* Lighter pink for odd sections */
@@ -27,49 +34,53 @@
             color: #ff0000;
             font-size: 2em;
             animation: beat 1s infinite;
+            margin-top: 20px;
         }
         @keyframes beat {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.2); }
         }
-        .image-container {
+        .link-container {
             margin-top: 20px;
         }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .link-container a {
+            color: #ff0000; /* Red color for hyperlink */
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+        .link-container a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.2em;
+            }
+            .section {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+            .link-container a {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="section">
-        <h2>Part 1</h2>
-        <p>This is the content for part 1.</p>
-    </div>
-    <div class="section">
-        <h2>Part 2</h2>
-        <p>This is the content for part 2.</p>
-    </div>
-    <div class="section">
-        <h2>Part 3</h2>
-        <p>This is the content for part 3.</p>
-    </div>
-    <div class="section">
-        <h2>Part 4</h2>
-        <p>This is the content for part 4.</p>
-    </div>
-    <div class="section">
-        <h2>Part 5</h2>
-        <p>This is the content for part 5.</p>
-    </div>
-    <div class="section">
-        <h2>Part 6</h2>
-        <p>This is the content for part 6.</p>
-    </div>
+    <h1>Thông Điệp Đặc Biệt Dành Cho Bạn</h1>
+    <div class="section">Đây là nội dung cho phần 1.</div>
+    <div class="section">Đây là nội dung cho phần 2.</div>
+    <div class="section">Đây là nội dung cho phần 3.</div>
+    <div class="section">Đây là nội dung cho phần 4.</div>
+    <div class="section">Đây là nội dung cho phần 5.</div>
+    <div class="section">Đây là nội dung cho phần 6.</div>
     <div class="heart">❤️</div>
-    <div class="image-container">
-        <img src="your-image-url.jpg" alt="Your Image Description">
+    <div class="link-container">
+        <a href="https://your-link-url.com" target="_blank">Nhấn vào đây để biết thêm chi tiết</a>
     </div>
 </body>
 </html>
